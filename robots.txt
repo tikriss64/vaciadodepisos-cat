@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Disallow: /gracias
+Disallow: /gracies
+Disallow: /gracias-de
+Disallow: /gracias-en
+Disallow: /gracias-es
+Disallow: /gracias-fr
+Disallow: /gracies-ca
+Disallow: /yandex_cc7b1b098647205d.html
+Disallow: /90841db6-3562-4a0f-92a4-f61be5e32933.html
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 10
+
+User-agent: AhrefsBot
+Crawl-delay: 30
+
+User-agent: SemrushBot
+Crawl-delay: 30
+
+Sitemap: https://vaciadodepisos.cat/sitemap.xml
+Sitemap: https://vaciadodepisos.cat/sitemap_index.xml

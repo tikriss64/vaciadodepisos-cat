@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+  <title>Gràcies! Hem rebut el seu missatge – VaciadoDePisos.cat</title>
+  <meta name="description" content="Gràcies per contactar amb nosaltres. Ens posarem en contacte amb vostè en menys de 24 hores.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="theme-color" content="#2B638D">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="common.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    /* ── VARIABLES ─────────────────────────────────────── */
+    :root {
+      --pr:   #2B638D;
+      --pr-d: #1a4a6e;
+      --sc:   #E8A933;
+      --sc-d: #c8872a;
+      --tx:   #2a2a2a;
+      --tx-m: #555;
+      --bg:   #f8fafc;
+      --wh:   #fff;
+      --bdr:  #e0e8f0;
+      --ok:   #22c55e;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--tx);
+      background: var(--bg);
+      margin: 0; padding: 0;
+      overflow-x: hidden;
+      line-height: 1.7;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 600;
+      color: var(--pr);
+      line-height: 1.25;
+      margin: 0 0 .5em;
+    }
+
+    p { margin: 0 0 1em; }
+    p:last-child { margin-bottom: 0; }
+    a { color: inherit; text-decoration: none; }
+
+    .pw { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── HERO ──────────────────────────────────────────── */
+    .ty-hero {
+      position: relative;
+      background: linear-gradient(135deg, var(--pr-d) 0%, var(--pr) 60%, #3a7bab 100%);
+      min-height: 52vh;
+      display: flex;
+      align-items: center;
+      padding: 140px 0 120px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .ty-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 380px; height: 380px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.05);
+    }
+    .ty-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -60px;
+      width: 260px; height: 260px;
+      border-radius: 50%;
+      background: rgba(232,169,51,.12);
+    }
+    .ty-hero-curve {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 72px;
+      background: var(--bg);
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+    .ty-hero-inner {
+      position: relative; z-index: 2; width: 100%;
+    }
+
+    /* Icono check animado */
+    .check-ring {
+      width: 90px; height: 90px;
+      background: rgba(255,255,255,.15);
+      border: 3px solid rgba(255,255,255,.35);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 28px;
+      animation: popIn .6s cubic-bezier(.175,.885,.32,1.275) both;
+    }
+    .check-ring .fas {
+      font-size: 2.4rem;
+      color: var(--ok);
+      animation: checkBounce .5s .3s cubic-bezier(.175,.885,.32,1.275) both;
+    }
+    @keyframes popIn {
+      0%   { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes checkBounce {
+      0%   { transform: scale(0) rotate(-20deg); }
+      100% { transform: scale(1) rotate(0deg); }
+    }
+
+    .ty-hero h1 {
+      font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+      color: #fff;
+      text-shadow: 0 1px 8px rgba(0,0,0,.18);
+      margin-bottom: 14px;
+      animation: fadeUp .5s .2s both;
+    }
+    .ty-hero .subtitle {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,.82);
+      font-weight: 300;
+      max-width: 480px;
+      margin: 0 auto;
+      animation: fadeUp .5s .35s both;
+    }
+    @keyframes fadeUp {
+      0%   { opacity: 0; transform: translateY(14px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── TARJETA ───────────────────────────────────────── */
+    .ty-card-wrap {
+      display: flex; justify-content: center;
+      padding: 0 24px;
+      margin-top: -50px;
+      position: relative; z-index: 10;
+    }
+    .ty-card {
+      background: var(--wh);
+      border-radius: 16px;
+      box-shadow: 0 12px 48px rgba(43,99,141,.14);
+      padding: 52px 56px;
+      max-width: 760px; width: 100%;
+      text-align: center;
+      animation: fadeUp .55s .45s both;
+    }
+    .ty-card h2 { font-size: 1.5rem; color: var(--pr); margin-bottom: 12px; }
+    .ty-card > p {
+      font-size: 1rem; color: var(--tx-m);
+      max-width: 520px; margin: 0 auto 36px; line-height: 1.75;
+    }
+    .ty-divider {
+      width: 60px; height: 3px;
+      background: var(--sc); border-radius: 2px;
+      margin: 0 auto 36px;
+    }
+
+    /* ── PASOS ─────────────────────────────────────────── */
+    .ty-steps {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; margin-bottom: 44px; text-align: left;
+    }
+    .ty-step {
+      background: var(--bg); border-radius: 12px;
+      padding: 22px 20px; border-top: 3px solid var(--sc);
+    }
+    .ty-step-num {
+      width: 36px; height: 36px; background: var(--pr); color: #fff;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-family: 'Lora', serif; font-size: .95rem; font-weight: 700;
+      margin-bottom: 12px; flex-shrink: 0;
+    }
+    .ty-step h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .88rem; font-weight: 700;
+      color: var(--pr); margin-bottom: 6px;
+    }
+    .ty-step p { font-size: .82rem; color: var(--tx-m); line-height: 1.6; margin: 0; }
+
+    /* ── URGENT ────────────────────────────────────────── */
+    .ty-urgent {
+      background: linear-gradient(135deg, #fff8ed, #fff3d9);
+      border: 1.5px solid rgba(232,169,51,.35);
+      border-radius: 12px;
+      padding: 24px 28px; margin-bottom: 36px;
+      display: flex; align-items: center; gap: 20px; text-align: left;
+    }
+    .ty-urgent-ico {
+      width: 52px; height: 52px; background: var(--sc); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .ty-urgent-ico .fas { font-size: 1.3rem; color: #1a2a3a; }
+    .ty-urgent h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .9rem; font-weight: 700; color: var(--sc-d); margin-bottom: 4px;
+    }
+    .ty-urgent p { font-size: .85rem; color: var(--tx-m); margin: 0; }
+    .ty-urgent a {
+      font-size: 1.2rem; font-weight: 700; color: var(--pr);
+      display: inline-flex; align-items: center; gap: 6px; transition: color .2s;
+    }
+    .ty-urgent a:hover { color: var(--sc-d); }
+
+    /* ── BOTONES ───────────────────────────────────────── */
+    .ty-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary-ty {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: linear-gradient(45deg, var(--sc), #ffc107);
+      color: #1a2a3a; padding: 13px 28px; border-radius: 50px;
+      font-weight: 700; font-size: .9rem; font-family: 'DM Sans', sans-serif;
+      box-shadow: 0 4px 18px rgba(232,169,51,.35);
+      transition: transform .25s, box-shadow .25s;
+    }
+    .btn-primary-ty:hover { transform: translateY(-2px); box-shadow: 0 8px 26px rgba(232,169,51,.5); color: #1a2a3a; }
+    .btn-secondary-ty {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: transparent; border: 2px solid var(--bdr);
+      color: var(--tx-m); padding: 12px 24px; border-radius: 50px;
+      font-weight: 600; font-size: .9rem; font-family: 'DM Sans', sans-serif;
+      transition: border-color .25s, color .25s;
+    }
+    .btn-secondary-ty:hover { border-color: var(--pr); color: var(--pr); }
+
+    /* ── INFERIOR ──────────────────────────────────────── */
+    .ty-bottom { padding: 64px 0 48px; }
+    .ty-links {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 16px; max-width: 760px; margin: 0 auto;
+    }
+    .ty-link-card {
+      background: var(--wh); border-radius: 10px;
+      padding: 22px 20px; border: 1.5px solid var(--bdr);
+      text-align: center;
+      transition: border-color .2s, box-shadow .2s, transform .2s;
+    }
+    .ty-link-card:hover {
+      border-color: var(--sc);
+      box-shadow: 0 6px 20px rgba(232,169,51,.15);
+      transform: translateY(-3px);
+    }
+    .ty-link-card .fas { font-size: 1.6rem; color: var(--sc); display: block; margin-bottom: 10px; }
+    .ty-link-card h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .88rem; font-weight: 700; color: var(--pr); margin-bottom: 6px;
+    }
+    .ty-link-card p { font-size: .78rem; color: var(--tx-m); line-height: 1.5; margin: 0; }
+    .ty-bottom-label { text-align: center; margin-bottom: 28px; }
+    .ty-bottom-label p {
+      font-size: .82rem; color: var(--tx-m);
+      text-transform: uppercase; letter-spacing: .1em; font-weight: 600;
+    }
+
+    /* ── RESPONSIVE ────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .ty-card { padding: 36px 24px; }
+      .ty-steps { grid-template-columns: 1fr; }
+      .ty-links { grid-template-columns: 1fr; max-width: 340px; }
+      .ty-urgent { flex-direction: column; text-align: center; }
+      .ty-hero { padding: 120px 0 100px; }
+    }
+    @media (max-width: 480px) {
+      .ty-actions { flex-direction: column; align-items: center; }
+      .ty-actions a { width: 100%; justify-content: center; }
+    }
+  </style>
+
+  <!-- Microsoft Clarity removed for portfolio -->
+</head>
+
+<body>
+
+<!-- HEADER mínimo -->
+<header id="header">
+  <div class="header-container">
+    <a href="/index-ca.html" class="logo">
+      <i class="fas fa-home" aria-hidden="true"></i>VaciadoDePisos<span>.cat</span>
+    </a>
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section class="ty-hero" aria-label="Confirmació d'enviament">
+  <div class="ty-hero-inner pw">
+
+    <div class="check-ring" aria-hidden="true">
+      <i class="fas fa-check"></i>
+    </div>
+
+    <h1>Missatge enviat amb èxit!</h1>
+    <p class="subtitle">Hem rebut la seva sol·licitud de pressupost. Li respondrem el més aviat possible.</p>
+
+  </div>
+  <div class="ty-hero-curve" aria-hidden="true"></div>
+</section>
+
+
+<!-- TARJETA PRINCIPAL -->
+<div class="ty-card-wrap">
+  <div class="ty-card">
+
+    <h2>Què passa ara?</h2>
+    <div class="ty-divider"></div>
+
+    <div class="ty-steps">
+      <div class="ty-step">
+        <div class="ty-step-num">1</div>
+        <h3>Revisem la seva sol·licitud</h3>
+        <p>Llegim tots els detalls que ens ha enviat per preparar la millor resposta.</p>
+      </div>
+      <div class="ty-step">
+        <div class="ty-step-num">2</div>
+        <h3>Li truquem en &lt;1h</h3>
+        <p>Un especialista es posa en contacte amb vostè per telèfon o WhatsApp.</p>
+      </div>
+      <div class="ty-step">
+        <div class="ty-step-num">3</div>
+        <h3>Pressupost tancat</h3>
+        <p>Li enviem un pressupost per escrit, sense lletra petita ni sorpreses.</p>
+      </div>
+    </div>
+
+    <div class="ty-urgent">
+      <div class="ty-urgent-ico"><i class="fas fa-phone" aria-hidden="true"></i></div>
+      <div>
+        <h3>Necessita una resposta immediata?</h3>
+        <p>Per urgències pot trucar-nos directament ara mateix:</p>
+        <a href="tel:+34688304143">
+          <i class="fas fa-phone" aria-hidden="true"></i> 688 30 41 43
+        </a>
+      </div>
+    </div>
+
+    <div class="ty-actions">
+      <a href="/index-ca.html" class="btn-primary-ty">
+        <i class="fas fa-home" aria-hidden="true"></i> Tornar a l'inici
+      </a>
+      <a href="https://wa.me/34688304143?text=Hola,%20acabo%20d'enviar%20un%20formulari%20i%20necessito%20informació"
+         target="_blank" rel="noopener noreferrer" class="btn-secondary-ty">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i> Escriure per WhatsApp
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- SECCIÓN INFERIOR -->
+<section class="ty-bottom">
+  <div class="pw">
+    <div class="ty-bottom-label">
+      <p>Mentre espera, pot consultar</p>
+    </div>
+    <div class="ty-links">
+      <a href="blog-ca.html" class="ty-link-card">
+        <i class="fas fa-newspaper" aria-hidden="true"></i>
+        <h4>Blog i guies</h4>
+        <p>Articles útils sobre buidatge de pisos, herències i més.</p>
+      </a>
+      <a href="quienes-somos.html" class="ty-link-card">
+        <i class="fas fa-users" aria-hidden="true"></i>
+        <h4>Qui som</h4>
+        <p>Conegui l'equip que gestionarà el seu buidatge.</p>
+      </a>
+      <a href="portfolio.html" class="ty-link-card">
+        <i class="fas fa-images" aria-hidden="true"></i>
+        <h4>Portfolio</h4>
+        <p>Treballs realitzats a tota Catalunya.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/34688304143"
+   class="whatsapp-elegante"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Contactar per WhatsApp">
+  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  <span>WhatsApp</span>
+</a>
+
+<script src="script.js" defer></script>
+</body>
+</html>

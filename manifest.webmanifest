@@ -1,0 +1,23 @@
+{
+  "name": "VaciadoDePisos.cat",
+  "short_name": "VaciadoDePisos",
+  "description": "Empresa profesional de vaciado de pisos en Barcelona. Precio cerrado, gestion ecologica, servicio urgente 24h.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#2b638d",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

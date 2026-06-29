@@ -1,0 +1,43 @@
+/* EQUIPO VACIADODEPISOS.CAT */
+
+  Fundador y Director: Martín Salas
+  Experiencia: Especialista en vaciado de pisos desde 2009
+  Contacto: 688 30 41 43 | vaciadodepisos@protonmail.com
+  Ubicación: Sant Pere de Ribes, Barcelona
+  Compromiso: +750 clientes satisfechos en Barcelona y provincia
+  
+  Equipo Técnico: Profesionales certificados en gestión de residuos
+  Especialidades: Vaciado por defunción, síndrome de Diógenes, herencias
+  Certificaciones: Gestión de residuos, desinfección, protocolos de seguridad
+  
+  Atención al Cliente: Asesoramiento personalizado 24/7
+  Valores: Sensibilidad, discreción, profesionalidad, transparencia
+
+/* AGRADECIMIENTOS */
+
+  A nuestros clientes: Por confiar en nosotros en momentos difíciles
+  A colaboradores: Agentes inmobiliarios, gestorías, servicios funerarios
+  A la comunidad: Barcelona y municipios que nos permiten servirles
+
+/* TECNOLOGÍA */
+
+  Desarrollado con: HTML5, CSS3, JavaScript Vanilla
+  Optimizado para: Velocidad, SEO y accesibilidad
+  Estándares: W3C Validado, Schema.org, Open Graph, hreflang
+  Rendimiento: Core Web Vitals optimizados
+  Seguridad: HTTPS, protección de datos
+  
+/* EL PROYECTO */
+
+  Nombre: VaciadoDePisos.cat
+  Misión: Proporcionar el mejor servicio de vaciado de pisos en Barcelona
+  Valores: Profesionalidad, sensibilidad, transparencia, eficiencia
+  Cobertura: Toda Barcelona y provincia
+  Desde: 2009
+  
+/* CONTACTO PROFESIONAL */
+
+  Web Developer: C.Courbain
+  Para colaboraciones técnicas: ccourbain@protonmail.com
+  Para referencias inmobiliarias: 688 30 41 43
+  Emergencias 24h: Disponible todo el año

@@ -1,0 +1,167 @@
+RewriteEngine On
+# Consolidación páginas de precios (guia-precios -> como-saber-precio)
+Redirect 301 /guia-precios-vaciado-pisos-barcelona-2026.html https://vaciadodepisos.cat/como-saber-precio-vaciado-piso-barcelona.html
+Redirect 301 /guia-precios-vaciado-pisos-barcelona-2026-ca.html https://vaciadodepisos.cat/como-saber-precio-vaciado-piso-barcelona-ca.html
+
+RewriteRule ^gràcies\.html$ /gracies.html [R=301,L]
+Options +FollowSymLinks -MultiViews
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RedirectMatch 301 ^/(.+)\.html\.html$ https://vaciadodepisos.cat/$1.html
+Redirect 301 /limpieza-por-sindrome-de%20diogenes https://vaciadodepisos.cat/limpieza-sindrome-diogenes-barcelona-protocolo.html
+RedirectMatch 301 ^/donde-tirar-muebles-enceres-barcelona-guia-2026\.html(.*)$ https://vaciadodepisos.cat/donde-tirar-muebles-enseres-barcelona-guia-2026.html
+RedirectMatch 301 ^/limpieza-por-sindrome-de\ diogenes$ https://vaciadodepisos.cat/limpieza-sindrome-diogenes-barcelona-protocolo.html
+
+Redirect 301 /vaciado-por-defuncion-barcelona-ca.html https://vaciadodepisos.cat/vaciado-por-defuncion-barcelona-guia-completa-ca.html
+Redirect 301 /vaciado-premium-sitges.html https://vaciadodepisos.cat/vaciado-premium-sitges-es.html
+Redirect 301 /guia-precios-vaciado-pisos-barcelona-2024-ca.html https://vaciadodepisos.cat/como-saber-precio-vaciado-piso-barcelona-ca.html
+Redirect 301 /vaciado-pisos-sitges-ca.html.html https://vaciadodepisos.cat/vaciado-pisos-sitges-ca.html
+
+Redirect 301 /donde-tirar-muebles-enceres-barcelona-guia-2026-ca.html https://vaciadodepisos.cat/donde-tirar-muebles-enseres-barcelona-guia-2026-ca.html
+Redirect 301 /donde-tirar-muebles-enceres-barcelona-guia-2026.html https://vaciadodepisos.cat/donde-tirar-muebles-enseres-barcelona-guia-2026.html
+Redirect 301 /donde-tirar-muebles-enceres-barcelona-guia-2024-ca.html https://vaciadodepisos.cat/donde-tirar-muebles-enseres-barcelona-guia-2026-ca.html
+Redirect 301 /donde-tirar-muebles-enceres-barcelona-guia-2024.html https://vaciadodepisos.cat/donde-tirar-muebles-enseres-barcelona-guia-2026.html
+Redirect 301 /guia-precios-vaciado-pisos-barcelona-2024.html https://vaciadodepisos.cat/como-saber-precio-vaciado-piso-barcelona.html
+
+Redirect 301 /home https://vaciadodepisos.cat/
+Redirect 301 /index.html https://vaciadodepisos.cat/
+Redirect 301 /index.php https://vaciadodepisos.cat/
+
+Redirect 301 /vaciado-por-defuncion-barcelona.html https://vaciadodepisos.cat/vaciado-por-defuncion-barcelona-guia-completa.html
+Redirect 301 /limpieza-por-sindrome-de-diogenes https://vaciadodepisos.cat/limpieza-sindrome-diogenes-barcelona-protocolo.html
+Redirect 301 /como-trabajamos https://vaciadodepisos.cat/quienes-somos.html
+Redirect 301 /vaciar-tu-piso-gratis https://vaciadodepisos.cat/vaciado-gratis-pisos-barcelona-cuando-posible.html
+
+Redirect 301 /blog https://vaciadodepisos.cat/blog.html
+Redirect 301 /blog-ca https://vaciadodepisos.cat/blog-ca.html
+
+Redirect 301 /donde-tirar-muebles-en-barcelona.html https://vaciadodepisos.cat/donde-tirar-muebles-enseres-barcelona-guia-2026.html
+Redirect 301 /donde-tirar-muebles-en-barcelona-ca.html https://vaciadodepisos.cat/donde-tirar-muebles-enseres-barcelona-guia-2026-ca.html
+
+Redirect 301 /presupuesto https://vaciadodepisos.cat/gracias.html
+Redirect 301 /quienes-somos https://vaciadodepisos.cat/quienes-somos.html
+Redirect 301 /qui-som.html https://vaciadodepisos.cat/qui-som-ca.html
+
+Redirect 301 /buidat-pisos-persones-grans-barcelona-atencio-especial.html https://vaciadodepisos.cat/vaciado-pisos-ancianos-barcelona-atencion-especial-ca.html
+Redirect 301 /com-triar-empresa-buidat-pisos-barcelona.html https://vaciadodepisos.cat/como-elegir-empresa-vaciado-pisos-barcelona-ca.html
+Redirect 301 /on-llençar-mobles-estris-barcelona-guia-2024.html https://vaciadodepisos.cat/donde-tirar-muebles-enseres-barcelona-guia-2026-ca.html
+Redirect 301 /com-saber-preu-buidat-pis-barcelona-ca.html https://vaciadodepisos.cat/como-saber-precio-vaciado-piso-barcelona-ca.html
+Redirect 301 /canvi-llogaters-preparacio-pisos-lloguer-ca.html https://vaciadodepisos.cat/cambio-inquilinos-preparacion-pisos-alquiler-ca.html
+Redirect 301 /buidat-naus-industrials-barcelona-ca.html https://vaciadodepisos.cat/vaciado-naves-industriales-barcelona-ca.html
+
+Redirect 301 /wp-content/webpc-passthru.php https://vaciadodepisos.cat/
+
+Redirect 301 /politica-privacitat.html https://vaciadodepisos.cat/politica-privacitat-ca.html
+Redirect 301 /privacitat.html https://vaciadodepisos.cat/politica-privacitat-ca.html
+Redirect 301 /avís-legal-ca.html https://vaciadodepisos.cat/avis-legal-ca.html
+# ============================================================
+# REDIRECCIONES AÑADIDAS PARA RESOLVER 404 PENDIENTES
+# ============================================================
+
+# URL truncada: /limpieza-sindrome- → redirige a la página completa
+RedirectMatch 301 ^/limpieza-sindrome-?$ https://vaciadodepisos.cat/limpieza-sindrome-diogenes-barcelona-protocolo.html
+
+# URLs basura con caracteres extraños (<, >) devolver 410 Gone para que Google las olvide
+RedirectMatch 410 ^/.*[<>].*$
+
+# NOTA: Se eliminó la regla que hacía 301 borrando utm_/fbclid/gclid/msclkid.
+# Esa regla destruía el tracking de campañas en Analytics (todo el tráfico
+# de pago, email y redes aparecía como "Directo"). Los parámetros de campaña
+# deben conservarse; Google los ignora para indexación gracias al canonical.
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+<IfModule mod_deflate.c>
+    SetOutputFilter DEFLATE
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|webp|avif)$ no-gzip dont-vary
+    SetEnvIfNoCase Request_URI \.(?:mp4|webm|ogg)$ no-gzip dont-vary
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/avif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType text/css "access plus 6 months"
+    ExpiresByType text/javascript "access plus 6 months"
+    ExpiresByType application/javascript "access plus 6 months"
+    ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js|woff2?|ttf|eot|svg|png|jpe?g|gif|webp|avif|ico)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+        Header unset ETag
+        FileETag None
+    </FilesMatch>
+    
+    <FilesMatch "\.(html|htm|php)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+    
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    # HSTS: fuerza HTTPS a nivel de navegador (refuerza la señal HTTPS de Google).
+    # Seguro: el sitio ya redirige todo a HTTPS (regla de arriba). Sin 'preload'
+    # para no comprometerse con la lista de precarga (requiere todos los subdominios en HTTPS).
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+	# ---- CANONICAL PARA PDFs ----
+<Files "02_checklist_limpieza_es.pdf">
+    Header set Link '<https://vaciadodepisos.cat/imagenes/pdf/02_checklist_limpieza_es.pdf>; rel="canonical"'
+    Header append Link '<https://vaciadodepisos.cat/imagenes/pdf/02_checklist_neteja_ca.pdf>; rel="alternate"; hreflang="ca"'
+</Files>
+<Files "02_checklist_neteja_ca.pdf">
+    Header set Link '<https://vaciadodepisos.cat/imagenes/pdf/02_checklist_neteja_ca.pdf>; rel="canonical"'
+    Header append Link '<https://vaciadodepisos.cat/imagenes/pdf/02_checklist_limpieza_es.pdf>; rel="alternate"; hreflang="es"'
+</Files>
+
+<Files "03_guia_vaciado_es.pdf">
+    Header set Link '<https://vaciadodepisos.cat/imagenes/pdf/03_guia_vaciado_es.pdf>; rel="canonical"'
+    Header append Link '<https://vaciadodepisos.cat/imagenes/pdf/03_guia_buidatge_ca.pdf>; rel="alternate"; hreflang="ca"'
+</Files>
+<Files "03_guia_buidatge_ca.pdf">
+    Header set Link '<https://vaciadodepisos.cat/imagenes/pdf/03_guia_buidatge_ca.pdf>; rel="canonical"'
+    Header append Link '<https://vaciadodepisos.cat/imagenes/pdf/03_guia_vaciado_es.pdf>; rel="alternate"; hreflang="es"'
+</Files>
+
+<Files "01_guia_colaboradores_es.pdf">
+    Header set Link '<https://vaciadodepisos.cat/imagenes/pdf/01_guia_colaboradores_es.pdf>; rel="canonical"'
+    Header append Link '<https://vaciadodepisos.cat/imagenes/pdf/01_guia_colaboradors_ca.pdf>; rel="alternate"; hreflang="ca"'
+</Files>
+<Files "01_guia_colaboradors_ca.pdf">
+    Header set Link '<https://vaciadodepisos.cat/imagenes/pdf/01_guia_colaboradors_ca.pdf>; rel="canonical"'
+    Header append Link '<https://vaciadodepisos.cat/imagenes/pdf/01_guia_colaboradores_es.pdf>; rel="alternate"; hreflang="es"'
+</Files>
+</IfModule>
+
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<IfModule mod_mime.c>
+    AddType image/avif avif
+</IfModule>
